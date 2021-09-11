@@ -5,6 +5,15 @@ function App() {
   return (
     <div className='upper'>
       <img className='imageHolder' src={covid} alt='Covid Background' />
+      <div class='top-left'>
+        <span>Vaccine Tracker</span>
+      </div>
+      <div class='top-left-below'>
+        <p>
+          Find all the important information and all the things related to Covid
+          Virus and Vaccine Here
+        </p>
+      </div>
       <img className='mainLogo' src={logo} alt='Logo' />
       <div>
         <form>

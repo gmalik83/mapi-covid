@@ -14,6 +14,40 @@
   left: 1065px;
   top: 21px;
 }
+.top-left {
+  position: absolute;
+  width: 277px;
+  height: 45px;
+  left: 50px;
+  top: 39px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.top-left-below {
+  position: absolute;
+  width: 202px;
+  height: 55px;
+  left: 57px;
+  top: 90px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 165.69%;
+
+  /* or 20px */
+
+  color: #ffffff;
+}
 .label1 {
   position: absolute;
   width: 99px;
@@ -86,12 +120,6 @@ input[type='text'] {
   top: 415px;
 }
 ::placeholder {
-  position: absolute;
-  width: 73px;
-  height: 23px;
-  left: 796px;
-  top: 306px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
