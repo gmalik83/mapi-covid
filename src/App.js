@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
-
+import logo from './Assets/logo.png';
+import covid from './Assets/covid.png';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='upper'>
+      <img className='imageHolder' src={covid} alt='Covid Background' />
+      <img className='mainLogo' src={logo} alt='Logo' />
+      <div>
+        <form>
+          <label for='First Name' className='label1'>
+            First Name
+          </label>
+          <input
+            type='text'
+            name='firstName'
+            placeholder='Pincode'
+            className='input1'
+          ></input>
+          <br></br>
+          <label for='Last Name' className='label2'>
+            Last Name
+          </label>
+          <input
+            type='text'
+            name='lastName'
+            placeholder='Pincode'
+            className='input2'
+          ></input>
+          <label for='Pincode' className='label3'>
+            Pincode
+          </label>
+          <input
+            type='text'
+            name='pincode'
+            placeholder='Pincode'
+            className='input3'
+          ></input>
+          <button className='button1'>Show Statistics</button>
+          <button className='button2'>Reset Form</button>
+        </form>
+      </div>
     </div>
   );
 }

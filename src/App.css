@@ -1,38 +1,141 @@
-.App {
+.imageHolder {
+  position: absolute;
+  width: 731px;
+  height: 720px;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(0, 0, 0, 0.38);
+}
+.mainLogo {
+  position: absolute;
+  width: 196px;
+  height: 81px;
+  left: 1065px;
+  top: 21px;
+}
+.label1 {
+  position: absolute;
+  width: 99px;
+  height: 23px;
+  left: 774px;
+  top: 122px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #545454;
+}
+.label2 {
+  position: absolute;
+  width: 97px;
+  height: 23px;
+  left: 774px;
+  top: 251px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #545454;
+}
+.label3 {
+  position: absolute;
+  width: 73px;
+  height: 23px;
+  left: 774px;
+  top: 380px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #545454;
+}
+input[type='text'] {
+  background: #ececec;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.input1 {
+  position: absolute;
+  width: 463px;
+  height: 63px;
+  left: 774px;
+  top: 157px;
+}
+.input2 {
+  position: absolute;
+  width: 463px;
+  height: 63px;
+  left: 774px;
+  top: 286px;
+}
+.input3 {
+  position: absolute;
+  width: 463px;
+  height: 63px;
+  left: 774px;
+  top: 415px;
+}
+::placeholder {
+  position: absolute;
+  width: 73px;
+  height: 23px;
+  left: 796px;
+  top: 306px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 20px 268px 20px 22px;
+  color: rgba(0, 0, 0, 0.3);
+}
+button {
   text-align: center;
 }
+.button1 {
+  position: absolute;
+  width: 463px;
+  height: 63px;
+  left: 774px;
+  top: 529px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background: #332272;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
 }
+.button2 {
+  position: absolute;
+  width: 463px;
+  height: 63px;
+  left: 774px;
+  top: 613px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  background: #ff3838;
+  border-radius: 4px;
+  position: absolute;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #ffffff;
 }
