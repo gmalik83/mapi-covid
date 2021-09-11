@@ -4,6 +4,18 @@ import logo from '../Assets/logo.png';
 import '../App.css';
 
 function Homepage() {
+  function handleSubmit(e) {
+    e.preventDefault();
+    // Check for valid values
+    // and navigate to /find and show that page
+
+    console.log('You have Submitted Already.');
+  }
+  function handleReset(e) {
+    e.preventDefault();
+
+    console.log('Successfully called');
+  }
   return (
     <div>
       <img className='imageHolder' src={covid} alt='Covid Background' />
@@ -18,8 +30,8 @@ function Homepage() {
       </div>
       <img className='mainLogo' src={logo} alt='Logo' />
       <div>
-        <form>
-          <label for='First Name' className='label1'>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor='First Name' className='label1'>
             First Name
           </label>
           <input
@@ -29,7 +41,7 @@ function Homepage() {
             className='input1'
           ></input>
           <br></br>
-          <label for='Last Name' className='label2'>
+          <label htmlFor='Last Name' className='label2'>
             Last Name
           </label>
           <input
@@ -38,7 +50,7 @@ function Homepage() {
             placeholder='Pincode'
             className='input2'
           ></input>
-          <label for='Pincode' className='label3'>
+          <label htmlFor='Pincode' className='label3'>
             Pincode
           </label>
           <input
@@ -47,8 +59,12 @@ function Homepage() {
             placeholder='Pincode'
             className='input3'
           ></input>
-          <button className='button1'>Show Statistics</button>
-          <button className='button2'>Reset Form</button>
+          <button type='Submit' className='button1'>
+            Show Statistics
+          </button>
+          <button className='button2' onClick={handleReset}>
+            Reset Form
+          </button>
         </form>
       </div>
     </div>
